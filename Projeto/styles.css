@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --bg-color: #ffffff;
+    --second-bg-color: #fff;
+    --text-color1: #ffbe02;
+    --text-color2: #0265dc;
+    --main-color: #00abf0;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    align-items: center;
+    width: 100%;
+    background: var(--bg-color);
+    height: 5.5rem;
+    z-index: 2;
+}
+
+.navbar {
+    position: relative;
+}
+
+.navbar a {
+    color: var(--text-color2);
+    font-weight: 600;
+    transition: .3s;
+    margin-left: 2rem;
+}
+
+#menu-icon {
+    display: none;
+    font-size: 2rem;
+}
+
+.logo {
+    margin-top: 1.5rem;
+}
+
+.logo img {
+    width: 80px;
+    height: 70px;
+    object-fit: cover;
+    position: relative;
+}
+
+.navbar .active,
+.navbar a:hover {
+    color: var(--text-color1);
+}
+
+.navbar a:active {
+    color: var(--text-color2);
+}
+
+section {
+    min-height: 100vh;
+    padding: 0 5rem;
+}
+
+/*Home Design*/
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--main-color);
+    height: auto;
+}
+
+.home-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.home-content h1 {
+    position: relative;
+    color: var(--text-color1);
+    font-weight: 700;
+    font-size: 6rem;
+}
+
+.home-content h3 {
+    color: var(--text-color2);
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.home-content .home-btn {
+    margin: 4rem 0 -4rem;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    height: 4.5rem;
+}
+
+.home-btn .btn {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 20rem;
+    width: auto;
+    height: 100%;
+    background: var(--text-color2);
+    border-radius: .8rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: .1rem;
+    color: var(--text-color1);
+    overflow: hidden;
+    transition: .3s;
+    text-align: center;
+    padding: 1rem 2rem;
+}
+
+.home-btn .btn:hover {
+    color: var(--text-color2);
+    transform: scale(1.08);
+    background: var(--text-color1);
+}
+
+.home-sci {
+    position: relative;
+    margin: 8rem 0 -8rem 0;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    height: auto;
+}
+
+.home-sci a {
+    color: var(--text-color1);
+    font-size: 2rem;
+    padding: 1.3rem;
+    border: .2rem solid var(--text-color1);
+    border-radius: 50%;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+    background: var(--text-color2);
+}
+
+.home-sci a:hover {
+    transform: scale(1.2);
+    color: var(--text-color2);
+    background: var(--text-color1);
+}
+
+/*ABOUT DESIGN*/
+
+.about {
+    background-color: #dc4e02;
+    display: flex;
+    width: 100%;
+}
+
+.about-text {
+    width: 45%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-text h2 {
+    color: var(--text-color2);
+    font-size: 2.6rem;
+    margin-bottom: 2rem;
+    width: auto;
+}
+
+.about-text span {
+    color: var(--text-color1);
+}
+
+.about-text p {
+    font-size: 1.3rem;
+    text-align: center;
+    color: #fff;
+}
+
+.imgs-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55%;
+}
+
+
+.imgs-box img {
+    border-radius: 2%;
+    margin-left: 4rem;
+    transition: opacity 3s;
+    position: absolute;
+    width: 600px;
+    height: 468px;
+}
